@@ -24,11 +24,11 @@ const Index = () => {
   };
 
   const handleCopyToClipboard = () => {
-    const text = `Kambo Grow & Smart Shop
+    const text = `Barrio Verde Grow
 Dirección: 123 Calle Principal, Ciudad, País
 Horarios: Lun - Sáb: 10:30 - 19:30, Dom: Cerrado
 Teléfono: +1 234 567 890
-Email: info@kambogrow.com`;
+Email: info@barrioverde.com`;
     navigator.clipboard.writeText(text).then(() => {
       toast.success('Datos copiados al portapapeles');
     });
@@ -81,7 +81,7 @@ Email: info@kambogrow.com`;
 
       {!selectedStore ? (
         <div className="text-center relative z-10 w-full max-w-md" style={{ animation: 'fadeIn 1.5s forwards' }}>
-          <h1 className="text-2xl sm:text-4xl mb-6 sm:mb-8 font-bold text-shadow">Kambo Grow & Smart Shop 🐸</h1>
+          <h1 className="text-2xl sm:text-4xl mb-6 sm:mb-8 font-bold text-shadow">Barrio Verde Grow 🌱</h1>
           <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
             <Button className="store-button w-full sm:w-48 bg-[#4CAF50] text-[#000000] hover:bg-[#45a049]" onClick={() => handleStoreSelect('main')}>
               Explorar Tienda
@@ -90,14 +90,14 @@ Email: info@kambogrow.com`;
         </div>
       ) : (
         <div className="text-center w-full max-w-md p-4 relative z-10" style={{ animation: 'fadeIn 1.5s forwards' }}>
-          <h2 className="text-xl sm:text-3xl mb-4 sm:mb-6 font-bold">Kambo Grow & Smart Shop 🐸</h2>
+          <h2 className="text-xl sm:text-3xl mb-4 sm:mb-6 font-bold">Barrio Verde Grow 🌱</h2>
           <div className="mb-6 text-left">
             <h3 className="text-lg sm:text-xl mb-3 sm:mb-4 font-semibold">Información de Contacto</h3>
             <p className="text-xs sm:text-base whitespace-pre-line">
               Dirección: 123 Calle Principal, Ciudad, País<br />
               Horarios: Lun - Sáb: 10:30 - 19:30, Dom: Cerrado<br />
               Teléfono: +1 234 567 890<br />
-              Email: info@kambogrow.com
+              Email: info@barrioverdegrow.com
             </p>
             <Button className="social-button mt-4 w-full text-xs sm:text-base bg-[#4CAF50] text-[#000000] hover:bg-[#45a049]" onClick={handleCopyToClipboard}>
               Copiar datos de contacto
@@ -106,15 +106,15 @@ Email: info@kambogrow.com`;
           <div className="flex flex-wrap justify-center items-center gap-2 mb-6">
             <Button 
               className="social-button text-xs sm:text-base bg-[#4CAF50] text-[#000000] hover:bg-[#45a049]"
-              onClick={() => window.open('https://wa.link/ud24fn', '_blank')}
+              onClick={() => window.open('https://wa.me/c/56949432698')}
             >
               <Phone className="mr-2" /> WhatsApp
             </Button>
             <Button 
               className="social-button text-xs sm:text-base bg-[#4CAF50] text-[#000000] hover:bg-[#45a049]"
-              onClick={() => window.open('https://www.instagram.com/kambogrow/', '_blank')}
+              onClick={() => window.open('https://www.instagram.com/barrioverdegrow.cl/', '_blank')}
             >
-              <Instagram className="mr-2" /> Instagram 🐸
+              <Instagram className="mr-2" /> Instagram 🌱
             </Button>
             <Button
               className="social-button text-xs sm:text-base bg-[#4CAF50] text-[#000000] hover:bg-[#45a049]"
@@ -124,7 +124,7 @@ Email: info@kambogrow.com`;
             </Button>
             <Button
               className="social-button text-xs sm:text-base bg-[#4CAF50] text-[#000000] hover:bg-[#45a049]"
-              onClick={() => window.open('https://www.google.com/maps?client=opera-gx&hs=TwT&sca_esv=b3b81d1d30ec7baa&output=search&q=kambo+grow+shop+ubicación&source=lnms&fbs=AEQNm0CbCVgAZ5mWEJDg6aoPVcBgy3z6G8XHXm5Ah4uwilWjRJeyTIczQNFLgz4BekoSgG4R3EvpFPQySx_mlSkGosXzKPW74IKUGm4uFRYtXAdKcveLTkbZEWxoccbKczIixf_JENIYySqOJN3OdO5W224NpPgzE0sbSu77tk65G6QsVN19Sl9-S3fQR2rf18N-vCozZtQ4ZKotfmVOyQm11cU_PfYXow&entry=mc&ved=1t:200715&ictx=111', '_blank')}
+              onClick={() => window.open('https://www.google.com/maps/place/Barrio+Verde+Growshop/@-33.0433154,-71.3764096,17z/data=!3m1!4b1!4m6!3m5!1s0x9689d783ab187a71:0x4ef9c1b7e75c1ec3!8m2!3d-33.0433154!4d-71.3738347!16s%2Fg%2F11c605n8_2?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D', '_blank')}
             >
               <MapPin className="mr-2" /> Ubicación
             </Button>
