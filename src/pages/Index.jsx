@@ -25,7 +25,7 @@ const Index = () => {
 
   const handleCopyToClipboard = () => {
     const text = `
-Kambo Grow\n
+Barrio Verde Grow\n
 77.239.704-6\n
               Cuenta Corriente\n
               87315568\n
@@ -63,8 +63,8 @@ Kambo Grow\n
           border-radius: 25px;
           font-weight: bold;
           text-transform: uppercase;
-          background-color: #4CAF50;
-          border: 2px solid #4CAF50;
+          background-color: #c500fd;
+          border: 2px solid #c500fd;
           box-shadow: 0 0 15px rgba(76, 175, 80, 0.3);
           transition: all 0.2s ease;
           font-size: 0.8rem;
@@ -78,7 +78,7 @@ Kambo Grow\n
         }
         .store-button:active, .social-button:active {
           transform: scale(0.98);
-          background-color: #4CAF50;
+          background-color: #c500fd;
         }
         @media (min-width: 640px) {
           .store-button, .social-button {
@@ -94,9 +94,9 @@ Kambo Grow\n
             <img src="https://imgur.com/JX2R9en.png" alt="Kambo Logo" className="w-48 h-auto mx-auto neon-logo" style={{ width: '150px', height: '150px', filter: 'drop-shadow(0 0 3px rgba(127, 255, 0, 0.7))',
     marginTop: '40px' }} />
           </div>
-          <h1 className="text-2xl sm:text-4xl mb-6 sm:mb-8 font-bold text-shadow relative z-10">Kambo Grow & Smart Shop 🐸</h1>
+          <h1 className="text-2xl sm:text-4xl mb-6 sm:mb-8 font-bold text-shadow relative z-10">Barrio Verde Grow 🌱</h1>
           <div className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-            <Button className="store-button w-full sm:w-48 bg-[#4CAF50] text-[#000000] hover:bg-[#45a049]" onClick={() => handleStoreSelect('main')}>
+            <Button className="store-button w-full sm:w-48 bg-[#c500fd] text-[#000000] hover:bg-[#45a049]" onClick={() => handleStoreSelect('main')}>
               Explorar Tienda
             </Button>
           </div>
@@ -107,7 +107,7 @@ Kambo Grow\n
             <img src="https://imgur.com/JX2R9en.png" alt="Kambo Logo" className="w-30 h-auto mx-auto neon-logo" style={{ width: '150px', height: '150px', filter: 'drop-shadow(0 0 3px rgba(127, 255, 0, 0.7))',
     marginTop: '40px' }} />
           </div>
-          <h2 className="text-xl sm:text-3xl mb-4 sm:mb-6 font-bold relative z-10">Kambo Grow & Smart Shop 🐸</h2>
+          <h2 className="text-xl sm:text-3xl mb-4 sm:mb-6 font-bold relative z-10">Barrio Verde Grow 🌱</h2>
           <div className="mb-6 text-left">
             <h3 className="text-lg sm:text-xl mb-3 sm:mb-4 font-semibold">Información de Transferencia</h3>
             <p className="text-xs sm:text-base whitespace-pre-line">
@@ -117,32 +117,32 @@ Kambo Grow\n
               Numero de cuenta: 87315568<br />
               Email: contacto@kambogrow.com
             </p>
-            <Button className="social-button mt-4 w-full text-xs sm:text-base bg-[#4CAF50] text-[#000000] hover:bg-[#45a049]" onClick={handleCopyToClipboard}>
+            <Button className="social-button mt-4 w-full text-xs sm:text-base bg-[#c500fd] text-[#000000] hover:bg-[#45a049]" onClick={handleCopyToClipboard}>
               Copiar datos de transferencia
             </Button>
           </div>
           <div className="flex flex-wrap justify-center items-center gap-2 mb-6">
             <Button 
-              className="social-button text-xs sm:text-base bg-[#4CAF50] text-[#000000] hover:bg-[#45a049]"
-              onClick={() => window.open('https://wa.link/ud24fn', '_blank')}
+              className="social-button text-xs sm:text-base bg-[#c500fd] text-[#000000] hover:bg-[#45a049]"
+              onClick={() => window.open('https://wa.me/c/56949432698', '_blank')}
             >
               <Phone className="mr-2" /> WhatsApp
             </Button>
             <Button 
-              className="social-button text-xs sm:text-base bg-[#4CAF50] text-[#000000] hover:bg-[#45a049]"
-              onClick={() => window.open('https://www.instagram.com/kambogrow/', '_blank')}
+              className="social-button text-xs sm:text-base bg-[#c500fd] text-[#000000] hover:bg-[#45a049]"
+              onClick={() => window.open('https://www.instagram.com/barrioverdegrow.cl/', '_blank')}
             >
-              <Instagram className="mr-2" /> Instagram 🐸
+              <Instagram className="mr-2" /> Instagram 🌱
             </Button>
             <Button
-              className="social-button text-xs sm:text-base bg-[#4CAF50] text-[#000000] hover:bg-[#45a049]"
+              className="social-button text-xs sm:text-base bg-[#c500fd] text-[#000000] hover:bg-[#45a049]"
               onClick={() => toast.info("Lun - Sáb: 10:30 - 19:30\nDomingo: Cerrado")}
             >
               <Clock className="mr-2" /> Horarios
             </Button>
             <Button
-              className="social-button text-xs sm:text-base bg-[#4CAF50] text-[#000000] hover:bg-[#45a049]"
-              onClick={() => window.open('https://www.google.com/maps?client=opera-gx&hs=TwT&sca_esv=b3b81d1d30ec7baa&output=search&q=kambo+grow+shop+ubicación&source=lnms&fbs=AEQNm0CbCVgAZ5mWEJDg6aoPVcBgy3z6G8XHXm5Ah4uwilWjRJeyTIczQNFLgz4BekoSgG4R3EvpFPQySx_mlSkGosXzKPW74IKUGm4uFRYtXAdKcveLTkbZEWxoccbKczIixf_JENIYySqOJN3OdO5W224NpPgzE0sbSu77tk65G6QsVN19Sl9-S3fQR2rf18N-vCozZtQ4ZKotfmVOyQm11cU_PfYXow&entry=mc&ved=1t:200715&ictx=111', '_blank')}
+              className="social-button text-xs sm:text-base bg-[#c500fd] text-[#000000] hover:bg-[#45a049]"
+              onClick={() => window.open('https://www.google.com/maps/place/Barrio+Verde+Growshop/@-33.0433154,-71.3764096,17z/data=!3m1!4b1!4m6!3m5!1s0x9689d783ab187a71:0x4ef9c1b7e75c1ec3!8m2!3d-33.0433154!4d-71.3738347!16s%2Fg%2F11c605n8_2?entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D', '_blank')}
             >
               <MapPin className="mr-2" /> Ubicación
             </Button>
@@ -151,7 +151,7 @@ Kambo Grow\n
       )}
 
       <Button
-        className="absolute top-4 right-4 bg-[#4CAF50] text-[#000000] hover:bg-[#45a049] px-2 py-1 sm:px-4 sm:py-2 rounded-full transition-all z-20 text-xs sm:text-base"
+        className="absolute top-4 right-4 bg-[#c500fd] text-[#000000] hover:bg-[#45a049] px-2 py-1 sm:px-4 sm:py-2 rounded-full transition-all z-20 text-xs sm:text-base"
         onClick={() => setSelectedStore(null)}
       >
         Volver al Inicio
