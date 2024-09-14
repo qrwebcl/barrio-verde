@@ -5,12 +5,8 @@ import { resolve } from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  server: {
-    host: "::",
-    port: "8081",
-  },
   plugins: [react()],
-  base: "/barrioverde/",
+  base: "/barrio-verde/",
   resolve: {
     alias: [
       {
