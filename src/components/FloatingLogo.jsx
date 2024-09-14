@@ -21,7 +21,7 @@ const FloatingLogo = () => {
       ref={logoRef}
       style={{
         position: 'absolute',
-        top: '40%',
+        top: '50%',
         left: '50%',
         transform: 'translate(-50%, -40%)',
         width: '250px',
