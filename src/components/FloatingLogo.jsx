@@ -1,58 +1,39 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 const FloatingLogo = () => {
   const logoRef = useRef(null);
-  const [oscillationSpeed, setOscillationSpeed] = useState(1);
 
   useEffect(() => {
     const animateLogo = () => {
       if (logoRef.current) {
-        const time = Date.now() * 0.001 * oscillationSpeed;
+        const time = Date.now() * 0.001;
         const yOffset = Math.sin(time) * 5;
-        logoRef.current.style.transform = `translate(-50%, -50%) translateY(${yOffset}px)`;
+        logoRef.current.style.transform = `translate(-50%, -40%) translateY(${yOffset}px)`;
       }
       requestAnimationFrame(animateLogo);
     };
     const animationFrame = requestAnimationFrame(animateLogo);
     return () => cancelAnimationFrame(animationFrame);
-  }, [oscillationSpeed]);
-
-  const handleLogoInteraction = (e) => {
-    if (!logoRef.current) return;
-    
-    const logo = logoRef.current;
-    const rect = logo.getBoundingClientRect();
-    const y = e.clientY - rect.top;
-    
-    const newSpeed = 1 + Math.abs((y / rect.height - 0.5) * 2);
-    setOscillationSpeed(newSpeed);
-  };
-
-  const resetLogoPosition = () => {
-    setOscillationSpeed(1);
-  };
+  }, []);
 
   return (
     <div
-      id="floating-logo"
       ref={logoRef}
-      onMouseMove={handleLogoInteraction}
-      onMouseLeave={resetLogoPosition}
       style={{
         position: 'absolute',
-        top: '50%',
+        top: '60%',
         left: '50%',
-        transform: 'translate(-50%, -50%)',
-        width: '150px',
-        height: '150px',
-        backgroundImage: 'url("https://ozeta.cl/wp-content/sabai/File/files/l_556ef36bb393009069eb500ba3087112.png")',
+        transform: 'translate(-50%, -40%)',
+        width: '250px',
+        height: '250px',
+        backgroundImage: 'url("https://imgur.com/DeZOYxV.png")',
         backgroundSize: 'contain',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        opacity: '0.15',
+        opacity: '0.4',
         transition: 'transform 0.3s ease-out',
-        cursor: 'pointer',
-        zIndex: 1
+        zIndex: 1,
+        filter: 'drop-shadow(0 0 8px rgba(127, 255, 0, 0.7))',
       }}
     />
   );
