@@ -10,7 +10,7 @@ export default defineConfig({
     port: "8080",
   },
   plugins: [react()],
-  base: "/kambo/",
+  base: "/barrio-verde/",
   resolve: {
     alias: [
       {
