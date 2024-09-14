@@ -91,7 +91,7 @@ Barrio Verde Grow\n
       {!selectedStore ? (
         <div className="text-center relative z-10 w-full max-w-md" style={{ animation: 'fadeIn 1.5s forwards' }}>
           <div className="relative mb-2">
-            <img src="https://imgur.com/JX2R9en.png" alt="Kambo Logo" className="w-48 h-auto mx-auto neon-logo" style={{ width: '150px', height: '150px', filter: 'drop-shadow(0 0 3px rgba(127, 255, 0, 0.7))',
+            <img src="https://imgur.com/eLyrd8g" alt="Kambo Logo" className="w-48 h-auto mx-auto neon-logo" style={{ width: '150px', height: '150px', filter: 'drop-shadow(0 0 3px rgba(127, 255, 0, 0.7))',
     marginTop: '40px' }} />
           </div>
           <h1 className="text-2xl sm:text-4xl mb-6 sm:mb-8 font-bold text-shadow relative z-10">Barrio Verde Grow 🌱</h1>
@@ -104,7 +104,7 @@ Barrio Verde Grow\n
       ) : (
         <div className="text-center w-full max-w-md p-4 relative z-10" style={{ animation: 'fadeIn 1.5s forwards' }}>
           <div className="relative mb-2">
-            <img src="https://imgur.com/JX2R9en.png" alt="Kambo Logo" className="w-30 h-auto mx-auto neon-logo" style={{ width: '150px', height: '150px', filter: 'drop-shadow(0 0 3px rgba(127, 255, 0, 0.7))',
+            <img src="https://imgur.com/eLyrd8g" alt="Kambo Logo" className="w-30 h-auto mx-auto neon-logo" style={{ width: '150px', height: '150px', filter: 'drop-shadow(0 0 3px rgba(127, 255, 0, 0.7))',
     marginTop: '40px' }} />
           </div>
           <h2 className="text-xl sm:text-3xl mb-4 sm:mb-6 font-bold relative z-10">Barrio Verde Grow 🌱</h2>
